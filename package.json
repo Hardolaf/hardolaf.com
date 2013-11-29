@@ -10,6 +10,9 @@
 	},
 	"dependencies": {
 		"colors": "*",
+		"db-filters": "0.2.*",
+		"dustjs-helpers": "1.1.*",
+		"dustjs-linkedin": "2.2.*",
 		"express": "3.*",
 		"flux-link": "0.3.*",
 		"mysql": "2.*",
