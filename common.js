@@ -502,7 +502,7 @@ function send_error(env) {
 	var msg = env._cmeta.error._msg || 'An undescribed error occurred.';
 
 	// Log the error that happened
-	//logger.info('Error occurred while handling route: ' + env.req.route.path, modname);
+	logger.info('Error occurred while handling route: ' + env.req.route.path, modname);
 	logger.var_dump(env._cmeta.error, {src : modname});
 
 	// Render the dust template for the user

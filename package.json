@@ -1,31 +1,35 @@
 {
-	"name": "hardolaf.com",
-	"preferGlobal": false,
-	"version": "0.0.1",
-	"author": "Joseph 'Hardolaf' Warner <hardolaf@gmail.com>",
-	"contributors": [
-		{
-			"name": "Greg Malysa",
-			"email:": "gmalysa@stanford.edu"
-		}
-	]
-	"description": "The main website of hardolaf.com.",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Hardolaf/hardolaf.com.git"
-	},
-	"dependencies": {
-		"colors": "*",
-		"db-filters": "0.2.*",
-		"dustjs-helpers": "1.1.*",
-		"dustjs-linkedin": "2.2.*",
-		"express": "3.*",
-		"flux-link": "0.3.*",
-		"mysql": "2.*",
-		"underscore": "1.*"
-	},
-	"license": "MIT",
-	"engines": {
-		"node": ">=0.11"
-	}
+  "name": "hardolaf.com",
+  "preferGlobal": false,
+  "version": "0.0.1",
+  "author": "Joseph 'Hardolaf' Warner <hardolaf@gmail.com>",
+  "contributors": [
+    {
+      "name": "Greg Malysa",
+      "email:": "gmalysa@stanford.edu"
+    }
+  ],
+  "description": "The main website of hardolaf.com.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hardolaf/hardolaf.com.git"
+  },
+  "dependencies": {
+    "colors": "*",
+    "db-filters": "0.2.*",
+    "dustjs-helpers": "1.1.*",
+    "dustjs-linkedin": "2.2.*",
+    "express": "3.*",
+    "flux-link": "0.3.*",
+    "mysql": "2.*",
+    "underscore": "1.*",
+    "winston": "0.7.*",
+    "caterpillar": "~2.0.6",
+    "caterpillar-filter": "~2.0.3",
+    "caterpillar-human": "~2.1.1"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.11"
+  }
 }

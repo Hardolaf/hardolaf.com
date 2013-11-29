@@ -82,4 +82,4 @@ ci.add_post_hook(fl.mkfn(cleanup_db, 0));
 ci.add_pre_hook(admin.initAdmin, 'admin');
 
 // Finally!
-logger.module_init(mod_name, mod_version, 'qdb server online');
+logger.module_init(mod_name, mod_version, 'hardolaf.com server online');
