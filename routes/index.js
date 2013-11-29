@@ -4,6 +4,9 @@
 
 function get_index(env, after) {
 	env.$template('index');
+	env.$output({
+		title: 'hardolaf.com',
+	});
 	after();
 }
 

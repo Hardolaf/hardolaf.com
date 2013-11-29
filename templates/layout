@@ -1,17 +1,42 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{title}</title>
 		<link rel='stylesheet' text="text/css" href="/static/css/app.css" />
 		<link rel="stylesheet" type="text/css" href="/static/css/_settings.css" />
+
+		<script src="/bower_components/foundation/js/vendor/custom.modernizer.js"></script>
 	</head>
 	<body>
-		<h1>{title}</h1>
-		{+content}
-			This is the base content.
-		{/content}
+		{>header /}
+
+		<!-- Main Page Content and Sidebar -->
+
+		<div class="row">
+			<!-- Main Content -->
+
+			{+content}
+				This is the main content.
+			{/content}
+
+			<!-- End Main Content -->
+
+			{>sidebar /}
+
+		</div>
+
+		<!-- End Main Content and Sidebar -->
+
+		{>footer /}
+
+		<script src="/bower_components/foundation/js/vendor/jquery.js"></script>
+		<script src="/bower_components/foundation/js/foundation.min.js"></script>
+		<script>
+			$(document).foundation();
+		</script>
 	</body>
 	<!--
 	{session}
