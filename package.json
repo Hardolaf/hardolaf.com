@@ -1,0 +1,22 @@
+{
+	"name": "hardolaf.com",
+	"preferGlobal": false,
+	"version": "0.0.1",
+	"author": "Joseph 'Hardolaf' Warner <hardolaf@gmail.com>",
+	"description": "The main website of hardolaf.com.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Hardolaf/hardolaf.com.git"
+	},
+	"dependencies": {
+		"colors": "*",
+		"express": "3.*",
+		"flux-link": "0.3.*",
+		"mysql": "2.*",
+		"underscore": "1.*"
+	},
+	"license": "MIT",
+	"engines": {
+		"node": ">=0.11"
+	}
+}
