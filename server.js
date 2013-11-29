@@ -74,8 +74,8 @@ ci.add_dust_helpers(dust_helpers);
 ci.add_dust_filters(dust_filters);
 
 // Default helpers, used by most routes
-ci.add_pre_hook(fl.mkfn(init_db, 0));
-ci.add_post_hook(fl.mkfn(cleanup_db, 0));
+//ci.add_pre_hook(fl.mkfn(init_db, 0));
+//ci.add_post_hook(fl.mkfn(cleanup_db, 0));
 
 // Admin-only page helpers
 //ci.add_pre_hook(admin.initAdmin, 'admin');
