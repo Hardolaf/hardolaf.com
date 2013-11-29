@@ -23,6 +23,7 @@ var config = {
 }
 
 // Import
+require('underscore');
 var level  = process.argv.indexOf('-d') === -1 ? 6 : 7;
 var _logger = require('caterpillar').createLogger({config:config, level:level});
 var filter = require('caterpillar-filter').createFilter();
@@ -44,7 +45,7 @@ function Logger(_logger) {
 	this.LEFT = 0;
 	this.RIGHT = 1;
 	this.CENTER = 2;
-	this.str_size = 12
+	this.str_size = 14
 }
 
 Logger.prototype = {
@@ -55,7 +56,7 @@ Logger.prototype = {
 			align = this.LEFT;
 
 		if (str.length >= size)
-			return str.substring(0, size);
+			return str.substring(0, size-1);
 
 		var padding = new Array(size-str.length).join(' ');
 
@@ -71,16 +72,16 @@ Logger.prototype = {
 	},
 
 	// Short for format special part. This easily formats special parts of logs.
-	fsp: function(msg) {
-		return '[ '+this.pad(module, this.str_size, this.LEFT)+']'
+	fsp: function(msg, size) {
+		return '[ '+this.pad(msg, size || this.str_size, this.LEFT)+' ]'
 	},
 
 	info: function(msg, module) {
-		this._logger.log('info', this.fsp(msg).green, msg);
+		this._logger.log('info', this.fsp(module).green, msg);
 	},
 
 	module_init: function(mod_name, mod_version, msg) {
-		this._logger.log('init', this.fsp(mod_name).green, this.fsp(mod_version).cyan, msg);
+		this._logger.log('info', this.fsp(mod_name).green, this.fsp(mod_version, mod_version.length + 1).cyan, msg);
 	},
 
 	warn: function(msg) {
