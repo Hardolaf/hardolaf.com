@@ -26,10 +26,12 @@
     "winston": "0.7.*",
     "caterpillar": "~2.0.6",
     "caterpillar-filter": "~2.0.3",
-    "caterpillar-human": "~2.1.1"
+    "caterpillar-human": "~2.1.1",
+    "grunt": "~0.4.2",
+    "grunt-contrib-sass": "~0.5.1"
   },
   "license": "MIT",
   "engines": {
-    "node": ">=0.11"
+    "node": ">=0.10"
   }
 }

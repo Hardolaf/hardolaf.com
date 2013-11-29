@@ -1,1 +1,4 @@
+{>layout /}
+{<content}
 Hello World!
+{/content}
