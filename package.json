@@ -3,6 +3,12 @@
 	"preferGlobal": false,
 	"version": "0.0.1",
 	"author": "Joseph 'Hardolaf' Warner <hardolaf@gmail.com>",
+	"contributors": [
+		{
+			"name": "Greg Malysa",
+			"email:": "gmalysa@stanford.edu"
+		}
+	]
 	"description": "The main website of hardolaf.com.",
 	"repository": {
 		"type": "git",
