@@ -19,7 +19,7 @@ var fl = require('flux-link');
 var logger = require('./logger');
 var mysql = require('./mysql');
 var common = require('./common.js');
-var admin = require('./admin');
+//var admin = require('./admin');
 
 /**
  * Gets a connection from the mysql pool and clones instances
@@ -47,12 +47,11 @@ function cleanup_db(env, after) {
 var base_url = 'http://node.thelonepole.com';
 
 // Set up custom dust functions
-var dh = require('./dust_functions');
+//var dh = require('./dust_functions');
 var dust_filters = {};
 var dust_helpers = {};
 
 // Initialize mysql
-var mysql = new mysql({database : 'hardolaf.com'});
 db.init(process.cwd() + '/filters', function(file) {
 	logger.info('Adding database definition ' + file.blue.bold + '...', 'db-filters');
 }, db.l_info);

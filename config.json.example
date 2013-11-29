@@ -1,0 +1,15 @@
+{
+	"set"				: {"env" : "development"},
+	"enable"			: ["trust proxy"],
+	"static_mount"		: "/static",
+	"static_path"		: "static",
+	"route_dir"			: "routes",
+	"template_dir"		: "templates",
+	"client_path"		: "/ui.js",
+	"client_prefix"		: "c-",
+	"dustjs_version"	: "2.2.0",
+	"port"				: 8124,
+	"shutdown"			: [],
+	"base_url"			: "/",
+	"session_secret"	: "thisisasecret"
+}

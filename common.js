@@ -32,12 +32,14 @@ var default_opts = {
 	'template_dir'		: 'templates',
 	'client_path'		: '/ui.js',
 	'client_prefix'		: 'c-',
-	'dustjs_version'	: '1.2.2',
+	'dustjs_version'	: '2.2.0',
 	'port'				: 8124,
 	'shutdown'			: [],
 	'base_url'			: '/',
 	'session_secret'	: 'thisisasecret'
 };
+
+var opts = _.extend({}, default_opts, require('./config'));
 
 /**
  * Initialization routine takes an express server instance and a list of options
@@ -46,7 +48,7 @@ var default_opts = {
 function init(server, options) {
 	var that = this;
 	options = options || {};
-	this.options = _.extend({}, default_opts, options);
+	this.options = _.extend({}, opts, options);
 	this.server = server;
 
 	// Initialize hook chains

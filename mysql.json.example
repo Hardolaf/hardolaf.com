@@ -1,0 +1,6 @@
+{
+	"database"	: "hardolaf_com",
+	"host"		: "localhost",
+	"user"		: "me",
+	"password"	: "secret",
+}
