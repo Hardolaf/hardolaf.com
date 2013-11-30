@@ -24,7 +24,9 @@
 
 			<!-- End Main Content -->
 
-			{>sidebar /}
+			{?show_sidebar}
+				{>sidebar /}
+			{/show_sidebar}
 
 		</div>
 

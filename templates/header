@@ -4,13 +4,13 @@
 	<div class="large-12 columns">
 		<div class="nav-bar right">
 			<ul class="button-group">
-				<li><a href="#" class="button">Link 1</a></li>
+				<li><a href="/." class="button">Blog</a></li>
 				<li><a href="#" class="button">Link 2</a></li>
 				<li><a href="#" class="button">Link 3</a></li>
-				<li><a href="#" class="button">Link 4</a></li>
+				<li><a href="/about" class="button">About</a></li>
 			</ul>
 		</div>
-		<h1>{title} <small>This is my blog. It's awesome.</small></h1>
+		<h1>{title} <small></small></h1>
 		<hr />
 	</div>
 </div>

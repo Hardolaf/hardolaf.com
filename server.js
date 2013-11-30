@@ -1,4 +1,4 @@
-/**
+	/**
  * Main server entry point, this configures express and attaches the relevant pathes,
  * most of which are defined in other files.
  */
@@ -65,7 +65,7 @@ var server = express();
 var ci = new common.init(server, {
 	port		: port,
 	set			: {env : env},
-	shutdown	: [{fn : mysql.deinit, ctx : mysql}],
+	shutdown	: [/*{fn : mysql.deinit, ctx : mysql}*/],
 	base_url	: base_url
 });
 
